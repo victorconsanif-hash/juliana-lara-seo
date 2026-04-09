@@ -1,0 +1,32 @@
+---
+---
+<div class="bg-white border border-[#E8D5CC] rounded-lg p-8">
+  <input id="simples-nome" type="text" placeholder="Seu nome completo" class="w-full border border-[#E8D5CC] rounded-md px-4 py-3.5 text-sm text-[#1A1A1A] mb-3 outline-none focus:border-[#8B4A3A] transition-all" />
+  <input id="simples-whatsapp" type="tel" placeholder="DDD + número (ex: 15988774433)" maxlength="11" class="w-full border border-[#E8D5CC] rounded-md px-4 py-3.5 text-sm text-[#1A1A1A] mb-5 outline-none focus:border-[#8B4A3A] transition-all" />
+
+  <button id="simples-btn" class="w-full bg-[#2D7A4F] text-white font-sans font-medium py-4 rounded-md hover:bg-[#236040] transition-colors text-sm tracking-wide">
+    Falar com a Dra. Juliana no WhatsApp
+  </button>
+  <p class="text-[#F5EDE8]/60 text-xs text-center mt-4">Suas informações são confidenciais e protegidas pelo sigilo profissional.</p>
+</div>
+
+<script is:inline>
+(function() {
+  var btn = document.getElementById("simples-btn")
+  if (!btn) return
+  btn.addEventListener("click", function() {
+    var nome = document.getElementById("simples-nome").value.trim()
+    var whatsapp = document.getElementById("simples-whatsapp").value.trim()
+    if (!nome || !whatsapp) { alert("Preencha seu nome e WhatsApp para continuar."); return; }
+    var msg = encodeURIComponent("Olá, Dra. Juliana! Gostaria de agendar uma consulta.")
+    window.open("https://wa.me/5515991853550?text=" + msg, "_blank")
+    fetch("https://n8n-n8n-start.p5vluh.easypanel.host/webhook/d7fa528e-07be-4805-9d32-efdb600f1064", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nome: nome, whatsapp: whatsapp, motivo: "Contato via home", origem: window.location.href })
+    }).finally(function() {
+      window.location.href = "/obrigado"
+    })
+  })
+})()
+</script>
