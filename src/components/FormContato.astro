@@ -1,0 +1,68 @@
+---
+const { webhook = "https://n8n-n8n-start.p5vluh.easypanel.host/webhook/d7fa528e-07be-4805-9d32-efdb600f1064" } = Astro.props
+---
+
+<div class="bg-white border border-[#E8D5CC] rounded-lg p-8 shadow-[0_8px_40px_rgba(139,74,58,0.12)]">
+  <div class="flex items-center gap-3 mb-6">
+    <img src="/images/hero-familia.jpg" alt="Dra. Juliana Lara" class="w-12 h-12 rounded-full object-cover border-2 border-[#E8D5CC]" style="object-position: center 10%" />
+    <div>
+      <p class="font-sans font-medium text-[#1A1A1A] text-sm">Dra. Juliana Lara Hannickel</p>
+      <p class="text-[#6B4C44] text-xs">OAB/SP 387.046 · Responde pessoalmente</p>
+    </div>
+  </div>
+  <div class="flex items-center gap-3 mb-4">
+    <div class="h-px w-6 bg-[#8B4A3A]"></div>
+    <p class="font-serif text-[#8B4A3A] text-base tracking-wide">Agende sua consulta</p>
+  </div>
+  <p class="text-[#6B4C44] text-sm mb-6 leading-relaxed">Preencha o formulário e a Dra. Juliana entrará em contato pelo WhatsApp.</p>
+
+  <input id="form-nome" type="text" placeholder="Seu nome completo" class="w-full border border-[#E8D5CC] rounded-md px-4 py-3.5 text-sm text-[#1A1A1A] mb-3 outline-none focus:border-[#8B4A3A] transition-all" />
+
+  <input id="form-whatsapp" type="tel" placeholder="WhatsApp com DDD (ex: 15988774433)" maxlength="11" pattern="[0-9]{10,11}" class="w-full border border-[#E8D5CC] rounded-md px-4 py-3.5 text-sm text-[#1A1A1A] mb-3 outline-none focus:border-[#8B4A3A] transition-all" />
+
+  <select id="form-motivo" class="w-full border border-[#E8D5CC] rounded-md px-4 py-3.5 text-sm text-[#6B4C44] mb-5 outline-none focus:border-[#8B4A3A] transition-all bg-white">
+    <option value="">Qual é o seu caso?</option>
+    <optgroup label="Direito de Família">
+      <option value="Divórcio">Divórcio</option>
+      <option value="Guarda de filhos">Guarda de filhos</option>
+      <option value="Pensão alimentícia">Pensão alimentícia</option>
+      <option value="Inventário e herança">Inventário e herança</option>
+      <option value="União estável">União estável</option>
+    </optgroup>
+    <optgroup label="Direito do Consumidor">
+      <option value="Nome negativado">Nome negativado</option>
+      <option value="Plano de saúde">Plano de saúde</option>
+      <option value="Fraude bancária / Golpe do Pix">Fraude bancária / Golpe do Pix</option>
+      <option value="Cobrança indevida">Cobrança indevida</option>
+      <option value="Outro">Outro</option>
+    </optgroup>
+  </select>
+
+  <button id="form-btn" class="w-full bg-[#2D7A4F] text-white font-sans font-medium py-4 rounded-md hover:bg-[#236040] transition-colors text-sm tracking-wide">
+    Falar com a Dra. Juliana no WhatsApp
+  </button>
+  <p class="text-[#6B4C44] text-xs text-center mt-4 leading-relaxed">Respondemos em até 2 horas nos dias úteis. Suas informações são protegidas pelo sigilo profissional.</p>
+</div>
+
+<script is:inline>
+(function() {
+  var btn = document.getElementById("form-btn")
+  if (!btn) return
+  btn.addEventListener("click", function() {
+    var nome = document.getElementById("form-nome").value.trim()
+    var whatsapp = document.getElementById("form-whatsapp").value.trim()
+    var motivo = document.getElementById("form-motivo").value
+    if (!nome || !whatsapp) { alert("Preencha seu nome e WhatsApp para continuar."); return; }
+    if (!motivo) { alert("Selecione o motivo do contato."); return; }
+    var msg = encodeURIComponent("Olá, Dra. Juliana! Gostaria de agendar uma consulta sobre: " + motivo + ".")
+    window.open("https://wa.me/5515991853550?text=" + msg, "_blank")
+    fetch("https://n8n-n8n-start.p5vluh.easypanel.host/webhook/d7fa528e-07be-4805-9d32-efdb600f1064", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nome: nome, whatsapp: whatsapp, motivo: motivo, origem: window.location.href })
+    }).finally(function() {
+      window.location.href = "/obrigado"
+    })
+  })
+})()
+</script>

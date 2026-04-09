@@ -1,17 +1,194 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
+import FormContato from "../components/FormContato.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="Advogada em Sorocaba | Dra. Juliana Lara Hannickel - Família e Consumidor"
+  description="Advogada especialista em Direito de Família, Sucessões e Direito do Consumidor em Sorocaba e região. Dra. Juliana Lara Hannickel - OAB/SP 387.046. Atendimento presencial e online."
+>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-24 bg-[#F5EDE8]">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-px w-8 bg-[#8B4A3A]"></div>
+          <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Advogada em Sorocaba</p>
+        </div>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] mb-6 text-[#1A1A1A]">
+          Seu problema jurídico resolvido com responsabilidade e agilidade
+        </h1>
+        <p class="text-[#6B4C44] text-lg leading-relaxed mb-8">
+          Especialista em Direito de Família, Sucessões e Direito do Consumidor. Atendimento humanizado em Sorocaba e região.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/5515991853550" class="inline-block bg-[#8B4A3A] text-white font-sans font-medium px-8 py-4 rounded-sm hover:bg-[#6B3328] transition-colors text-center">Agendar consulta</a>
+          <a href="#servicos" class="inline-block border border-[#8B4A3A] text-[#8B4A3A] font-sans font-medium px-8 py-4 rounded-sm hover:bg-[#8B4A3A] hover:text-white transition-colors text-center">Ver serviços</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="/images/hero-familia.jpg" alt="Dra. Juliana Lara Hannickel - Advogada em Sorocaba" class="rounded-md object-cover w-full max-w-md h-[560px]" style="object-position: center 10%" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="bg-white py-20 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="h-px w-8 bg-[#8B4A3A]"></div>
+        <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Áreas de atuação</p>
+      </div>
+      <h2 class="font-serif text-3xl md:text-4xl mb-12 text-[#1A1A1A]">Como posso ajudar você</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/divorcio-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Divórcio</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Consensual ou litigioso, conduzido com agilidade e respeito para todas as partes.</p>
+        </a>
+        <a href="/guarda-filhos-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Guarda de Filhos</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Guarda compartilhada, unilateral ou alternada, sempre priorizando o bem-estar das crianças.</p>
+        </a>
+        <a href="/pensao-alimenticia-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Pensão Alimentícia</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Fixação, revisão ou execução de alimentos com foco na proteção de quem depende.</p>
+        </a>
+        <a href="/inventario-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Inventário e Herança</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Inventário judicial ou extrajudicial, partilha de bens e planejamento sucessório.</p>
+        </a>
+        <a href="/nome-negativado-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Negativação Indevida</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Nome sujo por dívida inexistente, já paga ou sem notificação prévia.</p>
+        </a>
+        <a href="/plano-de-saude-sorocaba" class="border border-[#E8D5CC] p-7 rounded-md hover:border-[#8B4A3A] hover:shadow-sm transition-all group">
+          <h3 class="font-serif text-xl mb-3 text-[#1A1A1A] group-hover:text-[#8B4A3A] transition-colors">Plano de Saúde</h3>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">Negativa de cirurgia, tratamento ou cancelamento indevido do plano.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-20 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <img src="/images/hero-sobre.jpg" alt="Dra. Juliana Lara Hannickel" class="rounded-md object-cover w-full h-[580px]" />
+        <div class="absolute -bottom-4 -right-4 bg-[#8B4A3A] text-white px-6 py-4 rounded-md shadow-lg">
+          <p class="font-serif text-2xl">+9 anos</p>
+          <p class="text-xs tracking-wide mt-1 text-[#F5EDE8]">de experiência</p>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="h-px w-8 bg-[#8B4A3A]"></div>
+          <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Sobre a advogada</p>
+        </div>
+        <h2 class="font-serif text-3xl md:text-4xl mb-6 text-[#1A1A1A]">Dra. Juliana Lara Hannickel</h2>
+        <p class="text-[#6B4C44] text-base leading-relaxed mb-6">Advogada desde 2016, com atuação dedicada nas áreas de Direito Civil, Direito do Consumidor e, especialmente, Direito de Família e Sucessões. OAB/SP 387.046.</p>
+        <p class="text-[#6B4C44] text-base leading-relaxed mb-8">Minha missão é oferecer um atendimento jurídico humano, acessível e transparente, ajudando pessoas a enfrentarem momentos delicados com mais segurança e serenidade.</p>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="bg-white border border-[#E8D5CC] rounded-md p-4 text-center">
+            <p class="font-serif text-2xl text-[#8B4A3A]">+9</p>
+            <p class="text-[#6B4C44] text-xs mt-1">anos de experiência</p>
+          </div>
+          <div class="bg-white border border-[#E8D5CC] rounded-md p-4 text-center">
+            <p class="font-serif text-2xl text-[#8B4A3A]">5.0</p>
+            <p class="text-[#6B4C44] text-xs mt-1">★★★★★ no Google</p>
+          </div>
+        </div>
+        <a href="https://wa.me/5515991853550" class="inline-block bg-[#8B4A3A] text-white font-sans font-medium px-8 py-4 rounded-sm hover:bg-[#6B3328] transition-colors">Falar com a Dra. Juliana</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="bg-white py-20 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="h-px w-8 bg-[#8B4A3A]"></div>
+        <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Avaliações</p>
+      </div>
+      <div class="flex items-end gap-6 mb-12">
+        <h2 class="font-serif text-3xl md:text-4xl text-[#1A1A1A]">O que dizem os clientes</h2>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-yellow-400 text-xl">★★★★★</span>
+          <span class="font-sans font-medium text-[#1A1A1A] text-sm">5.0</span>
+          <span class="text-[#6B4C44] text-sm">· 30 avaliações no Google</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#F5EDE8] border border-[#E8D5CC] rounded-md p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#8B4A3A] flex items-center justify-center text-white font-serif text-sm">A</div>
+            <div><p class="font-sans font-medium text-[#1A1A1A] text-sm">Andressa Betti</p><p class="text-yellow-400 text-xs">★★★★★</p></div>
+          </div>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">"A Dra. Juliana é uma profissional simplesmente incrível! Muito atenciosa, humana e dedicada, demonstrando um verdadeiro cuidado em cada detalhe do meu processo."</p>
+        </div>
+        <div class="bg-[#F5EDE8] border border-[#E8D5CC] rounded-md p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#C9A98A] flex items-center justify-center text-white font-serif text-sm">J</div>
+            <div><p class="font-sans font-medium text-[#1A1A1A] text-sm">Jesse dos Animais</p><p class="text-yellow-400 text-xs">★★★★★</p></div>
+          </div>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">"Ganhei duas causas com ela em 3 anos. Uma na vara de família e outra civil contra um banco. Excelente profissional, competente. Indico e endosso."</p>
+        </div>
+        <div class="bg-[#F5EDE8] border border-[#E8D5CC] rounded-md p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#8B4A3A] flex items-center justify-center text-white font-serif text-sm">L</div>
+            <div><p class="font-sans font-medium text-[#1A1A1A] text-sm">Larissa Pauletti</p><p class="text-yellow-400 text-xs">★★★★★</p></div>
+          </div>
+          <p class="text-[#6B4C44] text-sm leading-relaxed">"A melhor advogada de Sorocaba. Recomendo de olhos fechados!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="bg-[#F5EDE8] py-12 px-6 md:px-16 lg:px-24 border-t border-[#E8D5CC]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-[#8B4A3A] flex items-center justify-center flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <div>
+          <p class="font-sans font-medium text-[#1A1A1A] text-sm">Escritório em Sorocaba</p>
+          <p class="text-[#6B4C44] text-sm">R. Manoel Leite Magalhães, 82 - Centro, Sorocaba - SP</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-[#8B4A3A] flex items-center justify-center flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.08 4.5 2 2 0 0 1 3.07 2.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div>
+          <p class="font-sans font-medium text-[#1A1A1A] text-sm">WhatsApp</p>
+          <a href="https://wa.me/5515991853550" class="text-[#8B4A3A] text-sm hover:underline">(15) 99185-3550</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-[#8B4A3A] flex items-center justify-center flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        </div>
+        <div>
+          <p class="font-sans font-medium text-[#1A1A1A] text-sm">Atendimento</p>
+          <p class="text-[#6B4C44] text-sm">Sorocaba, região e online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contato" class="bg-[#8B4A3A] py-20 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="font-serif text-3xl md:text-4xl text-white mb-4">Precisa de orientação jurídica?</h2>
+        <p class="text-[#F5EDE8]/80 text-lg leading-relaxed">Entre em contato e agende uma consulta com a Dra. Juliana Lara. Atendimento presencial em Sorocaba e região, e online para todo o Brasil.</p>
+      </div>
+      <div>
+        <FormContato />
+      </div>
+    </div>
+  </section>
+
+</Layout>

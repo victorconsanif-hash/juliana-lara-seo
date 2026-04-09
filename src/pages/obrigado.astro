@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout
+  title="Contato recebido | Dra. Juliana Lara Hannickel"
+  description="Obrigado pelo contato. A Dra. Juliana Lara entrará em contato em breve."
+>
+
+  <section class="min-h-screen flex items-center justify-center px-6 py-24 bg-[#F5EDE8]">
+    <div class="max-w-xl w-full text-center">
+
+      <div class="w-16 h-16 rounded-full bg-[#2D7A4F] flex items-center justify-center mx-auto mb-8">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="h-px w-8 bg-[#8B4A3A]"></div>
+        <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Contato recebido</p>
+        <div class="h-px w-8 bg-[#8B4A3A]"></div>
+      </div>
+
+      <h1 class="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-6 leading-tight">Obrigado pelo contato!</h1>
+
+      <p class="text-[#6B4C44] text-lg leading-relaxed mb-4">O WhatsApp foi aberto automaticamente para você iniciar a conversa com a Dra. Juliana.</p>
+
+      <div class="bg-white border border-[#E8D5CC] rounded-md px-6 py-4 mb-8 inline-block">
+        <p class="text-[#1A1A1A] font-sans font-medium text-sm">Respondemos em até 2 horas nos dias úteis</p>
+        <div class="flex items-center justify-center gap-2 mt-2">
+          <span class="text-yellow-400 text-sm">★★★★★</span>
+          <span class="text-[#6B4C44] text-xs">5.0 · 30 avaliações no Google</span>
+        </div>
+      </div>
+
+      <p class="text-[#6B4C44] text-sm mb-6">Se o WhatsApp não abriu automaticamente, clique abaixo:</p>
+
+      <button id="whatsapp-btn" class="bg-[#2D7A4F] text-white font-sans font-medium px-8 py-4 rounded-md hover:bg-[#236040] transition-colors">
+        Abrir WhatsApp
+      </button>
+
+    </div>
+  </section>
+
+</Layout>
+
+<script is:inline>
+document.getElementById("whatsapp-btn").addEventListener("click", function() {
+  var msg = encodeURIComponent("Olá, Dra. Juliana! Gostaria de agendar uma consulta.")
+  window.open("https://wa.me/5515991853550?text=" + msg, "_blank")
+})
+</script>

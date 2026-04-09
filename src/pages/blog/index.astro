@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import { getCollection } from "astro:content"
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+)
+---
+
+<Layout
+  title="Blog Jurídico | Dra. Juliana Lara Hannickel - Advogada em Sorocaba"
+  description="Artigos sobre Direito de Família, Sucessões e Direito do Consumidor em Sorocaba. Dra. Juliana Lara Hannickel - OAB/SP 387.046."
+>
+
+  <section class="bg-[#F5EDE8] py-20 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="h-px w-8 bg-[#8B4A3A]"></div>
+        <p class="font-serif text-[#8B4A3A] text-sm tracking-widest uppercase">Blog jurídico</p>
+      </div>
+      <h1 class="font-serif text-4xl md:text-5xl mb-4 text-[#1A1A1A]">Artigos e orientações jurídicas</h1>
+      <p class="text-[#6B4C44] text-lg max-w-2xl">Conteúdo educativo sobre Direito de Família, Sucessões e Direito do Consumidor. Escrito pela Dra. Juliana Lara Hannickel.</p>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 md:px-16 lg:px-24 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map((post) => (
+        <a href={`/blog/${post.id}`} data-id={post.id} class="group border border-[#E8D5CC] rounded-md overflow-hidden hover:shadow-md transition-shadow">
+          <div class="p-7">
+            <span class="inline-block text-xs font-medium text-[#8B4A3A] bg-[#F5EDE8] px-3 py-1 rounded-full mb-4">{post.data.categoria}</span>
+            <h2 class="font-serif text-xl text-[#1A1A1A] mb-3 leading-snug group-hover:text-[#8B4A3A] transition-colors">{post.data.title}</h2>
+            <p class="text-[#6B4C44] text-sm leading-relaxed mb-4 line-clamp-3">{post.data.description}</p>
+            <div class="flex items-center justify-between">
+              <span class="text-[#6B4C44] text-xs">{post.data.date.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}</span>
+              <span class="text-[#8B4A3A] text-sm font-medium group-hover:underline">Ler artigo →</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+</Layout>

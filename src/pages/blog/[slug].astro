@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import FormContato from "../../components/FormContato.astro"
+import { getCollection, render } from "astro:content"
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog")
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+---
+
+<Layout
+  title={`${post.data.title} | Dra. Juliana Lara Hannickel`}
+  description={post.data.description}
+>
+
+  <section class="bg-[#F5EDE8] py-16 px-6 md:px-16 lg:px-24 border-b border-[#E8D5CC]">
+    <div class="max-w-3xl mx-auto">
+      <a href="/blog" class="text-[#8B4A3A] text-sm font-medium hover:underline mb-6 inline-block">← Voltar ao blog</a>
+      <span class="inline-block text-xs font-medium text-[#8B4A3A] bg-white border border-[#E8D5CC] px-3 py-1 rounded-full mb-4">{post.data.categoria}</span>
+      <h1 class="font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight mb-4">{post.data.title}</h1>
+      <div class="flex items-center gap-4">
+        <img src="/images/hero-familia.jpg" alt="Dra. Juliana Lara" class="w-10 h-10 rounded-full object-cover border-2 border-[#E8D5CC]" style="object-position: center 10%" />
+        <div>
+          <p class="font-sans font-medium text-[#1A1A1A] text-sm">{post.data.author}</p>
+          <p class="text-[#6B4C44] text-xs">{post.data.date.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 md:px-16 lg:px-24">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <article class="lg:col-span-2 prose prose-lg max-w-none
+        prose-headings:font-serif prose-headings:text-[#1A1A1A]
+        prose-p:text-[#6B4C44] prose-p:leading-relaxed
+        prose-a:text-[#8B4A3A] prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-[#1A1A1A]
+        prose-li:text-[#6B4C44]
+        prose-table:text-sm">
+        <Content />
+      </article>
+      <aside class="lg:col-span-1">
+        <div class="sticky top-8">
+          <FormContato />
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</Layout>
