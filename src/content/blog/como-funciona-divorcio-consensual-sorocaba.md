@@ -19,12 +19,12 @@ Para realizar o divórcio diretamente no cartório de notas em Sorocaba, é nece
 
 ## Documentos necessários
 
-Para dar entrada no divórcio consensual você vai precisar de certidão de casamento atualizada, RG e CPF de ambos, documentação dos bens a partilhar e comprovante de endereço atualizado.
+Para dar entrada no divórcio consensual você vai precisar de certidão de casamento atualizada, RG e CPF de ambos, documentação dos bens a partilhar, comprovante de endereço atualizado e certidão de nascimento dos filhos.
 
 
 ## Quanto tempo leva?
 
-O divórcio consensual em cartório pode ser concluído em poucas semanas, dependendo da disponibilidade do cartório e da documentação. É significativamente mais rápido que o processo judicial.
+O divórcio consensual feito em cartório é concluído no mesmo dia da assinatura das partes, desde que toda a documentação esteja em ordem. É significativamente mais rápido que o processo judicial.
 
 
 ## Por que contratar um advogado?

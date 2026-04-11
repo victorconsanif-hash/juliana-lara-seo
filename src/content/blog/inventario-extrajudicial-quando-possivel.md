@@ -14,17 +14,17 @@ O inventário extrajudicial é uma opção mais rápida e econômica para regula
 
 ## Quando é possível fazer em cartório?
 
-Para o inventário extrajudicial todos os herdeiros devem ser maiores de 18 anos e capazes, não pode haver herdeiros incapazes ou nascituros, todos devem estar de acordo com a partilha, não pode haver testamento (ou deve estar homologado), e todos devem estar representados por advogado.
+O inventário pode ser feito em cartório quando todos os herdeiros são maiores, capazes, estão de acordo com a divisão dos bens e não há impedimentos como herdeiros menores ou conflito. Também é obrigatório ter um advogado acompanhando.
 
 
 ## Documentos necessários
 
-Certidão de óbito, documentos do falecido e de todos os herdeiros, documentação de todos os bens, certidões negativas de débitos e comprovante do pagamento do ITCMD.
+Certidão de óbito, documentos do falecido e de todos os herdeiros, inclusive dos cônjuges, e documentação de todos os bens.
 
 
 ## Vantagens do inventário extrajudicial
 
-É mais rápido (semanas em vez de meses), menos custoso sem taxas judiciais, e menos burocrático. Se houver qualquer divergência entre herdeiros, será necessário o inventário judicial.
+É mais rápido, menos custoso e menos burocrático, mas só é possível quando há consenso entre os herdeiros; caso contrário, será necessário o inventário judicial.
 
 
 ## Precisa de ajuda em Sorocaba?

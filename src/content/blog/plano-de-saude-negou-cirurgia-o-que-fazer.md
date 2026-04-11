@@ -24,7 +24,7 @@ As operadoras frequentemente negam cobertura alegando procedimento fora do Rol d
 **3. Registre uma reclamação na ANS** — a agência reguladora pode resolver sem necessidade de ir à justiça.
 
 
-**4. Consulte um advogado** — em muitos casos é possível obter uma liminar judicial em horas, obrigando o plano a cobrir o procedimento.
+**4. Consulte um advogado** — em muitos casos é possível obter uma liminar judicial em pouco tempo, obrigando o plano a cobrir o procedimento.
 
 
 ## Quando acionar a justiça imediatamente?

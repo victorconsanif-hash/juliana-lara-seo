@@ -14,7 +14,7 @@ A negativação é indevida quando a dívida já foi paga, a dívida não existe
 
 ## Seus direitos
 
-O Código de Defesa do Consumidor é claro: o credor tem obrigação de comunicar o consumidor antes de incluir seu nome nos órgãos de proteção ao crédito. Sem essa comunicação, a negativação já é ilegal. Dívidas pagas devem ter o nome retirado em no máximo 5 dias úteis.
+O Código de Defesa do Consumidor exige que o consumidor seja previamente notificado antes da inclusão de seu nome em cadastros de inadimplentes. A ausência dessa notificação torna a negativação irregular e pode gerar indenização por danos morais, a depender do caso. Além disso, após o pagamento da dívida, o nome do consumidor deve ser retirado dos órgãos de proteção ao crédito no prazo máximo de 5 dias úteis.
 
 
 ## Como agir imediatamente
@@ -24,7 +24,7 @@ Consulte o Serasa ou SPC para identificar as dívidas registradas, verifique se 
 
 ## Tenho direito a indenização?
 
-Sim. A negativação indevida gera dano moral presumido — não é necessário provar o prejuízo. Os valores costumam ficar entre R$ 3.000 e R$ 15.000 dependendo do caso.
+Sim. A negativação indevida pode gerar indenização por danos morais, que são presumidos, dispensando a prova do prejuízo. Contudo, o direito à indenização pode ser afastado ou reduzido caso existam outras inscrições legítimas em nome do consumidor. Os valores variam conforme o caso concreto, mas geralmente ficam entre R$ 3.000 e R$ 15.000.
 
 
 ## Precisa de ajuda em Sorocaba?
