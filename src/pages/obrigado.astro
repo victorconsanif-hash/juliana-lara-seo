@@ -46,6 +46,8 @@ import Layout from "../layouts/Layout.astro"
 </Layout>
 
 <script is:inline>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'conversao_formulario', pagina: 'obrigado' });
 document.getElementById("whatsapp-btn").addEventListener("click", function() {
   var msg = encodeURIComponent("Olá, Dra. Juliana! Gostaria de agendar uma consulta.")
   window.open("https://wa.me/5515996204944?text=" + msg, "_blank")
