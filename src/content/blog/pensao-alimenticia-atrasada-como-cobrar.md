@@ -26,9 +26,9 @@ Quando o atraso é de até 3 prestações vencidas (incluindo a do mês corrente
 Como funciona:
 
 1. Advogado protocola a execução na vara de família
-2. Juiz manda intimar o devedor para pagar em **3 dias**, justificar a impossibilidade ou recolher-se à prisão
-3. Se ele não pagar e não justificar com documento, é decretada **prisão civil de 1 a 3 meses**
-4. Pagar não cancela a dívida: tem que quitar tudo, ou voltar pra cadeia
+2. Juiz manda intimar o devedor para pagar em **3 dias**, provar que pagou, ou justificar a impossibilidade de pagamento
+3. Se ele não pagar ou se a justificativa não for aceita, o juiz pode decretar a **prisão civil pelo prazo de 1 a 3 meses**
+4. Pagar parcialmente não cancela a dívida: tem que quitar tudo, ou pode voltar para a cadeia
 
 Esse rito é o mais eficaz. A prisão é em regime fechado, separada de presos comuns. Mesmo a ameaça da prisão costuma fazer o devedor pagar antes do juiz expedir o mandado.
 
@@ -76,15 +76,9 @@ Sem problema. A execução tramita na vara de família onde a criança mora. Par
 
 Para entrar com a execução de pensão, traga:
 
-- Sentença ou acordo que fixou a pensão (se foi extrajudicial, a escritura)
+- Sentença ou acordo que fixou a pensão
 - Cálculo dos meses em atraso, com correção monetária e juros
-- Comprovantes de tentativa de cobrança (mensagens, e-mails, transferências falhadas)
-- Dados do devedor: CPF, endereço atualizado, local de trabalho se souber
-
-
-## Quanto tempo demora pra começar a receber
-
-Com tudo em ordem, **o bloqueio bancário sai em 24-48 horas** após o despacho do juiz. A execução pelo rito da prisão tipicamente resolve em 30-60 dias: ou o devedor paga, ou é preso. Penhora de salário pode começar a entrar na conta do credor já no mês seguinte.
+- Dados que tiver do devedor: nome completo, CPF, RG, endereço, local de trabalho
 
 
 ## Próximo passo
