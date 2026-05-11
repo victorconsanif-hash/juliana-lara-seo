@@ -14,7 +14,7 @@ A guarda compartilhada é o modelo padrão previsto no Código Civil desde 2014.
 
 ## O que é guarda alternada?
 
-Na guarda alternada, os filhos passam períodos alternados morando com cada genitor — uma semana com o pai, uma com a mãe, por exemplo. Não há residência principal, a criança mora em dois lugares de forma alternada.
+Na guarda alternada, os filhos passam períodos alternados morando com cada genitor, uma semana com o pai, uma com a mãe, por exemplo. Não há residência principal, a criança mora em dois lugares de forma alternada.
 
 
 ## Principais diferenças

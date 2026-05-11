@@ -15,16 +15,16 @@ As operadoras frequentemente negam cobertura alegando procedimento fora do Rol d
 ## O que fazer quando o plano negar?
 
 
-**1. Solicite a negativa por escrito** — exija que o plano formalize a recusa com os motivos específicos.
+**1. Solicite a negativa por escrito**: exija que o plano formalize a recusa com os motivos específicos.
 
 
-**2. Recorra internamente** — apresente recurso com documentação médica que comprove a necessidade.
+**2. Recorra internamente**: apresente recurso com documentação médica que comprove a necessidade.
 
 
-**3. Registre uma reclamação na ANS** — a agência reguladora pode resolver sem necessidade de ir à justiça.
+**3. Registre uma reclamação na ANS**: a agência reguladora pode resolver sem necessidade de ir à justiça.
 
 
-**4. Consulte um advogado** — em muitos casos é possível obter uma liminar judicial em pouco tempo, obrigando o plano a cobrir o procedimento.
+**4. Consulte um advogado**: em muitos casos é possível obter uma liminar judicial em pouco tempo, obrigando o plano a cobrir o procedimento.
 
 
 ## Quando acionar a justiça imediatamente?

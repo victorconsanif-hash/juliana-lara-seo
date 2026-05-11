@@ -4,7 +4,7 @@ description: "Saiba o que fazer quando seu nome é negativado indevidamente no S
 date: 2025-04-05
 categoria: "Direito do Consumidor"
 ---
-Ter o nome incluído indevidamente no Serasa ou SPC causa prejuízos financeiros e emocionais. Mas você tem direitos — pode buscar tanto a retirada do nome quanto uma indenização por danos morais.
+Ter o nome incluído indevidamente no Serasa ou SPC causa prejuízos financeiros e emocionais. Mas você tem direitos: pode buscar tanto a retirada do nome quanto uma indenização por danos morais.
 
 
 ## O que é negativação indevida?

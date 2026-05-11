@@ -27,7 +27,7 @@ Quando há filhos menores ou incapazes, o divórcio precisa passar pela vara de 
 
 Em Sorocaba, na prática, o tempo varia conforme:
 
-- **Pauta da vara** — algumas estão mais carregadas que outras
+- **Pauta da vara**: algumas estão mais carregadas que outras
 - **Documentação completa** desde o protocolo (faltar papel atrasa em semanas)
 - **Manifestação rápida do Ministério Público**
 
@@ -39,7 +39,7 @@ Em casos bem instruídos, a sentença sai em **30 a 60 dias**. Quando a document
 Na minha experiência atendendo famílias de Sorocaba e região, os atrasos vêm quase sempre de três coisas:
 
 1. **Acordos verbais que viram desacordo na hora de formalizar.** "Combinamos isso" sem registrar gera reescrita do acordo no meio do caminho.
-2. **Bens com pendência cartorária** — imóvel sem regularização, veículo com débito, conta conjunta não fechada. Antes de protocolar o divórcio, esses pontos têm que estar limpos.
+2. **Bens com pendência cartorária**: imóvel sem regularização, veículo com débito, conta conjunta não fechada. Antes de protocolar o divórcio, esses pontos têm que estar limpos.
 3. **Documentos vencidos.** Certidão de casamento mais antiga que 90 dias normalmente é rejeitada. Comprovante de endereço também precisa ser recente.
 
 
@@ -73,6 +73,6 @@ Sim. O divórcio pode ser feito em qualquer cartório do país (no caso extrajud
 
 ## Próximo passo
 
-Se você está pensando em formalizar a separação, o primeiro passo é uma conversa franca para entender o seu caso e definir o melhor caminho — extrajudicial rápido ou judicial protetivo. Cuido pessoalmente de cada cliente, sem terceirizar pra terceiros.
+Se você está pensando em formalizar a separação, o primeiro passo é uma conversa franca para entender o seu caso e definir o melhor caminho: extrajudicial rápido ou judicial protetivo. Cuido pessoalmente de cada cliente, sem terceirizar pra terceiros.
 
-[Fale comigo no WhatsApp](https://wa.me/5515996204944) ou [solicite uma consulta](/#contato). Em Sorocaba ou online.
+[Solicite uma consulta](/#contato) e a Dra. Juliana entra em contato com você. Em Sorocaba ou online.
