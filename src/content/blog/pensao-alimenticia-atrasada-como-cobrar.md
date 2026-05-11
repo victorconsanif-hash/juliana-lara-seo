@@ -39,7 +39,7 @@ Para parcelas vencidas há mais de 3 meses, ou quando o credor opta pelo rito me
 
 - **Salário** do devedor (até 50% pode ser descontado direto na folha)
 - **Saldo bancário** via sistema SISBAJUD (juiz bloqueia em horas)
-- **FGTS** do devedor (saque pra pagar pensão é autorizado)
+- **FGTS** do devedor (saque para pagar pensão é autorizado)
 - **Restituição do imposto de renda**
 - **Veículos** via RENAJUD
 - **Imóveis** via penhora e leilão
@@ -48,7 +48,7 @@ Para parcelas vencidas há mais de 3 meses, ou quando o credor opta pelo rito me
 
 ## Caminho 3: Protesto e negativação
 
-Sem precisar esperar a execução completa, a pensão atrasada pode ser **protestada em cartório** e o nome do devedor incluído nos órgãos de proteção ao crédito (Serasa, SPC). Isso costuma resolver casos onde o devedor tem renda informal mas precisa de crédito pra trabalhar: financiamento de veículo, abertura de conta empresarial, etc.
+Sem precisar esperar a execução completa, a pensão atrasada pode ser **protestada em cartório** e o nome do devedor incluído nos órgãos de proteção ao crédito (Serasa, SPC). Isso costuma resolver casos onde o devedor tem renda informal mas precisa de crédito para trabalhar: financiamento de veículo, abertura de conta empresarial, etc.
 
 
 ## Caminho 4: Suspensão de CNH, passaporte e cartão de crédito
@@ -59,7 +59,7 @@ Desde a reforma do CPC de 2015, o juiz pode aplicar **medidas atípicas** quando
 - Apreensão do passaporte
 - Suspensão dos cartões de crédito
 
-A jurisprudência ainda varia, mas é uma ferramenta poderosa pra devedores que ostentam padrão de vida incompatível com o "não tenho dinheiro pra pensão".
+A jurisprudência ainda varia, mas é uma ferramenta poderosa para devedores que ostentam padrão de vida incompatível com o "não tenho dinheiro para pensão".
 
 
 ## E quando o devedor está desempregado de verdade?
@@ -72,12 +72,11 @@ A justificativa de desemprego só vale se for **comprovada e involuntária**. Me
 Sem problema. A execução tramita na vara de família onde a criança mora. Para devedor em outro estado, há cooperação automática entre tribunais. Para devedor no exterior, há tratados internacionais (Convenção de Nova York e outros) que permitem cobrança transfronteira em mais de 80 países.
 
 
-## Documentos pra começar a cobrança
+## Documentos para começar a cobrança
 
 Para entrar com a execução de pensão, traga:
 
 - Sentença ou acordo que fixou a pensão
-- Cálculo dos meses em atraso, com correção monetária e juros
 - Dados que tiver do devedor: nome completo, CPF, RG, endereço, local de trabalho
 
 
@@ -85,4 +84,4 @@ Para entrar com a execução de pensão, traga:
 
 Cada situação tem nuances que mudam a estratégia. O devedor é assalariado ou autônomo? Já houve revisão? A criança mora com você ou alterna? Esses detalhes definem qual rito aplicar primeiro.
 
-Se a pensão dos seus filhos está atrasada, [agende uma consulta pelo formulário](/#contato) e eu entro em contato com você. Atendo presencialmente em Sorocaba e online em todo o Brasil. A primeira conversa serve pra entender seu caso e desenhar o caminho mais rápido pra você voltar a receber.
+Se a pensão dos seus filhos está atrasada, [agende uma consulta pelo formulário](/#contato) e eu entro em contato com você. Atendo presencialmente em Sorocaba e online em todo o Brasil. A primeira conversa serve para entender seu caso e desenhar o caminho mais rápido para você voltar a receber.
