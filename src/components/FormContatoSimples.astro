@@ -21,12 +21,39 @@ const WEBHOOK_URL = "https://n8n-n8n-start.p5vluh.easypanel.host/webhook/seo-jul
 (function() {
   var btn = document.getElementById(uid + "-btn")
   if (!btn) return
+
+  function pushLeadSubmit(phone) {
+    return new Promise(function (resolve) {
+      var done = false
+      var finish = function () { if (!done) { done = true; resolve() } }
+      setTimeout(finish, 1500)
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({
+        event: "lead_submit",
+        lp_origem: lpOrigem,
+        origem_botao: "seo-form-simples",
+        enhanced_conversion_data: { phone_number: phone, sha256_first_name: null },
+        eventTimeout: 1500,
+        eventCallback: finish
+      })
+    })
+  }
+
   btn.addEventListener("click", function() {
     var nome = document.getElementById(uid + "-nome").value.trim()
     var whatsapp = document.getElementById(uid + "-whatsapp").value.trim()
     if (!nome || !whatsapp) { alert("Preencha seu nome e WhatsApp para continuar."); return; }
+
+    var phone = "+55" + whatsapp.replace(/\D/g, "")
+    try { sessionStorage.setItem("lp_origem", lpOrigem) } catch (e) {}
+    try { sessionStorage.setItem("lead_phone", phone) } catch (e) {}
+
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({ event: "whatsapp_click", lp_origem: lpOrigem, origem_botao: "seo-form-simples" })
+
     var msg = encodeURIComponent("Olá, Dra. Juliana! Gostaria de agendar uma consulta.")
     window.open("https://wa.me/5515996204944?text=" + msg, "_blank")
+
     var utms = (typeof window.getUtms === "function") ? window.getUtms() : {}
     var payload = Object.assign({
       nome: nome,
@@ -35,13 +62,15 @@ const WEBHOOK_URL = "https://n8n-n8n-start.p5vluh.easypanel.host/webhook/seo-jul
       lp_origem: lpOrigem,
       conversion_url: window.location.href
     }, utms)
-    fetch(WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    }).finally(function() {
-      window.location.href = "/obrigado"
-    })
+
+    Promise.all([
+      pushLeadSubmit(phone),
+      fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+    ]).finally(function() { window.location.href = "/obrigado" })
   })
 })()
 </script>
