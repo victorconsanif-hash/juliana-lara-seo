@@ -14,6 +14,58 @@
 
 ---
 
+## 🗓️ 2026-05-10 (parte 4) — Migração de domínio: apex → site SEO
+
+**Contexto:** com a integração da parte 3 validada end-to-end, migramos o domínio principal `advogadajulianalara.com.br` para servir o site SEO (Vercel) no lugar do WordPress que estava no apex (Hostinger).
+
+### Estado anterior
+- `advogadajulianalara.com.br` (apex) → A `89.116.115.37` (Hostinger / WordPress)
+- `www.advogadajulianalara.com.br` → A `89.116.115.37` via CNAME → apex (Hostinger / WordPress)
+- `lp.advogadajulianalara.com.br` → A `76.76.21.142` (Vercel / projeto LP)
+- DNS gerenciada em Hostinger (NS `ns1/ns2.dns-parking.com`)
+
+### Mudanças aplicadas
+
+**No Vercel** (projeto `juliana-lara-seo`, id `prj_qc0ZlA152YlYH85JVhrTZzhxG5Uy`):
+- Apex `advogadajulianalara.com.br` adicionado como Production (sem redirect).
+- `www.advogadajulianalara.com.br` adicionado com redirect 307 → apex (Vercel não ofereceu 308 nesse plano).
+- `juliana-lara-seo.vercel.app` mantido.
+
+**Na Hostinger** (DNS):
+- A `@` alterado de `89.116.115.37` para `216.198.79.1` (Vercel novo IP, com IP-range expansion).
+- AAAA `@` (IPv6 `2a02:4780:13:1410:0:39a7:baec:2`) removido — estava conflitando.
+- CNAME `www` alterado de `advogadajulianalara.com.br` para `bcaf24dee3aca950.vercel-dns-017.com.` (endpoint dedicado do Vercel pro projeto).
+- TXT/MX/NS preservados (e-mail Hostinger continua funcionando).
+
+**No git/Vercel:**
+- Commit `09c1a04` (integração SEO → n8n → Agendor) pushed pra `origin/main`.
+- Vercel buildou como Preview e foi promovido manualmente pra Production (deploy id `dpl_3GpAUYHRKaoVNiZJAfMY6pX6TS9C`). **Investigar:** auto-promote pra Production está desabilitado nesse projeto — checar Settings → Git → Production Branch.
+
+### Validação final ✅
+- `https://advogadajulianalara.com.br/` — 200, SSL OK, integração captureUtms presente.
+- `https://advogadajulianalara.com.br/divorcio-sorocaba` — 200, `lpOrigem="seo-divorcio-sorocaba"`, webhook `seo-juliana-agendor` no HTML.
+- `https://www.advogadajulianalara.com.br/` — 307 → apex (funcional, mas idealmente 308).
+- Custom fields novos `motivo` e `conversion_url` criados no Agendor pela usuária e populando.
+- Lead de teste real (`TESTE custom fields`) criado e validado com 11 campos preenchidos, depois deletado via API.
+
+### Pegadinhas técnicas registradas
+
+**Cache stale do Vercel após mudança DNS:** mesmo após remover o AAAA na Hostinger e Google/Cloudflare DoH confirmarem ausência, Vercel continuou mostrando "Invalid Configuration" no apex citando o AAAA antigo. Refresh múltiplos não resolveram. Solução que funcionou: remover o domínio do projeto Vercel e re-adicionar — bypass do cache do resolver interno deles.
+
+**Cert SAN insuficiente após adicionar www:** depois de adicionar `www`, o cert do Vercel ficou só com `CN=www.advogadajulianalara.com.br` e o apex passou a falhar SSL (`subjectAltName does not match`). O remove+re-add do apex força reemissão com ambos os domínios no SAN.
+
+**Direção do redirect www↔apex:** o checkbox "(Recommended)" do Vercel propõe `apex → www`, mas como o canonical do `Layout.astro` aponta pro apex (`https://advogadajulianalara.com.br/`), invertemos pra `www → apex` (radio "Redirect to Another Domain").
+
+**Localhost interceptação:** durante teste local com `npm run dev`, browser hitando `localhost:4321` no Windows pegava outro processo Windows-side (curso-cadeira) ao invés do WSL2. Solução: rodar com `--host` e usar IP da rede do WSL (`http://172.17.5.135:4321/`).
+
+### Pendências
+- 🔍 **WordPress órfão na Hostinger:** o conteúdo do WP não foi apagado, só o domínio que apontava pra ele saiu. Se precisar de algum conteúdo dele, está no painel Hostinger. Caso contrário, pode ser desativado quando ela quiser.
+- 🔍 **Auto-promote Production no Vercel SEO:** investigar por que `git push` não vira deploy de produção automaticamente (último commit antes da migração também tinha ficado só Preview).
+- 🔍 **Atualizar redirect www → apex pra 308** quando Vercel oferecer (atualmente 307 funciona).
+- 🔍 **LP em `lp.advogadajulianalara.com.br`** continua ativa. Decidir se desativa ou se mantém pra Ads enviarem tráfego pra LP separada (recomendado manter, é mais rápido pra ROI de Ads que SEO indexar páginas novas).
+
+---
+
 ## 🗓️ 2026-05-10 (parte 3) — Integração site SEO → n8n → Agendor
 
 **Contexto:** após a integração da LP (parte 2), portamos o mesmo pipeline pro site SEO `juliana-lara-seo` (Astro, hoje em `juliana-lara-seo.vercel.app`, será promovido pra `https://advogadajulianalara.com.br/` substituindo a LP atual nesse domínio). Antes, os formulários do site SEO faziam POST num webhook simples (`d7fa528e-...`) sem capturar UTMs e sem integração com Agendor.
