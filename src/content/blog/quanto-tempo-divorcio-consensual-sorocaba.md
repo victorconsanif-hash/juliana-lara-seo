@@ -1,6 +1,6 @@
 ---
-title: "Quanto tempo demora o divórcio consensual em Sorocaba? (1 dia a 90 dias)"
-description: "Divórcio consensual em cartório: 1 dia. Judicial com filhos menores: 30 a 90 dias. Veja o que define o prazo e como acelerar. Dra. Juliana Lara, OAB/SP 387.046."
+title: "Divórcio consensual em Sorocaba: pode sair em 1 dia"
+description: "Sem filhos menores, sai no mesmo dia em cartório. Com filhos, 30 a 60 dias na Justiça. Veja prazos reais e como acelerar a separação em Sorocaba."
 date: 2026-05-10
 author: "Dra. Juliana Lara Hannickel"
 categoria: "Direito de Família"
