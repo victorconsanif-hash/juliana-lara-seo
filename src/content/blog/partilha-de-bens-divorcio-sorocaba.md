@@ -24,7 +24,7 @@ A comunhão parcial de bens é o regime mais comum, automático para quem casou 
 
 Na comunhão universal de bens divide-se praticamente tudo, inclusive o que cada um já tinha antes e o que recebeu de herança, salvo cláusula de incomunicabilidade. Esse regime exige pacto antenupcial.
 
-Na separação total de bens cada um fica com o que está em seu nome, sem partilha do que é individual. Também exige pacto antenupcial, exceto na separação obrigatória imposta por lei, como para quem casou após os 70 anos.
+Na separação total de bens, em regra, cada cônjuge permanece com os bens que lhe pertencem. Esse regime normalmente exige pacto antenupcial, exceto nas hipóteses de separação obrigatória previstas em lei.
 
 A participação final nos aquestos é o regime mais raro. Durante o casamento funciona como separação total, mas, no divórcio, calcula-se o que cada um adquiriu de forma onerosa na constância da união e divide-se essa diferença.
 
@@ -45,7 +45,7 @@ No caso de imóvel financiado, a dívida também entra na conta. Divide-se o que
 
 ## E as dívidas, também se dividem
 
-Sim, quando contraídas durante o casamento e em benefício da família. Financiamentos, empréstimos e dívidas de consumo do casal compõem o passivo comum e entram na conta da partilha. Já as dívidas pessoais de um dos cônjuges, sem proveito comum, em regra ficam com quem as contraiu.
+Sim, as dívidas também podem ser consideradas na partilha, especialmente quando foram assumidas em benefício da família ou do patrimônio comum. Financiamentos, empréstimos e dívidas de consumo do casal compõem o passivo comum e entram na conta da partilha. Já as dívidas pessoais de um dos cônjuges, sem proveito comum, em regra ficam com quem as contraiu.
 
 
 ## Dá para se divorciar agora e partilhar os bens depois
